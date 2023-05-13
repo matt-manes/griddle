@@ -7,7 +7,7 @@ name = "griddle"
 description = "Turn an interable into a printable grid with dynamically controlled column sizes to shrink grid width to your terminal size."
 version = "0.0.0"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["tabulate"]
 readme = "README.md"
 keywords = ["tabulate", "grid", "print", "terminal"]
 classifiers = [
