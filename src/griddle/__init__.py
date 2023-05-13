@@ -9,7 +9,7 @@ def griddy(
     headers: str | dict[str, str] | Sequence[str] = (),
     shrink_to_terminal: bool = True,
     margin: int = 10,
-    table_format: str = "rounded_grid",
+    table_format: str = "grid",
     disable_numparse: bool = True,
 ) -> str:
     """Convert `data` into a formatted string grid representation.
