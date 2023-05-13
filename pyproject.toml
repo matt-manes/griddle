@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "griddle"
 description = "Turn an interable into a printable grid with dynamically controlled column sizes to shrink grid width to your terminal size."
-version = "0.0.0"
+version = "0.0.1"
 requires-python = ">=3.10"
 dependencies = ["tabulate"]
 readme = "README.md"
