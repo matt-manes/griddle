@@ -1,7 +1,9 @@
 import os
-from typing import Any, Iterable, Mapping, Sequence
+from typing import Any, Iterable, Mapping, Sequence, Callable
 
 from tabulate import tabulate
+
+__version__ = "0.0.1"
 
 
 def griddy(
@@ -40,7 +42,7 @@ def griddy(
     if not shrink_to_terminal:
         return output
 
-    grid = lambda w: tabulate(
+    grid: Callable[[Any], str] = lambda w: tabulate(
         data,
         headers=headers,
         disable_numparse=True,
@@ -73,3 +75,6 @@ def griddy(
         if acceptable_width < current_width < terminal_width:
             return output
     raise RuntimeError("Could not resize grid to fit within the terminal :/.")
+
+
+__all__ = ["griddy"]
