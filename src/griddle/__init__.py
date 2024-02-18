@@ -1,9 +1,9 @@
 import os
-from typing import Any, Iterable, Mapping, Sequence, Callable
+from typing import Any, Callable, Iterable, Mapping, Sequence
 
 from tabulate import tabulate
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 
 def griddy(
